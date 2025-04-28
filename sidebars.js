@@ -13,6 +13,7 @@ const sidebars = {
         '/en/basics/06-interactive-tutorials',
         '/en/basics/07-advanced-challenges',
         '/en/basics/08-scenarios-and-quizzes',
+        '/en/basics/09-specialized-labs',
       ],
     },
     {
@@ -94,6 +95,7 @@ const sidebars = {
         '/ar/basics/06-interactive-tutorials',
         '/ar/basics/07-advanced-challenges',
         '/ar/basics/08-scenarios-and-quizzes',
+        '/ar/basics/09-specialized-labs',
       ],
     },
     {

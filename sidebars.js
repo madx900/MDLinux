@@ -10,6 +10,7 @@ const sidebars = {
         '/en/basics/03-command-line',
         '/en/basics/04-file-system',
         '/en/basics/05-using-documentation',
+        '/en/basics/06-interactive-tutorials',
       ],
     },
     {
@@ -88,6 +89,7 @@ const sidebars = {
         '/ar/basics/03-command-line',
         '/ar/basics/04-file-system',
         '/ar/basics/05-using-documentation',
+        '/ar/basics/06-interactive-tutorials',
       ],
     },
     {

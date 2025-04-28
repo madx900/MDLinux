@@ -1,9 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MDLinux',
@@ -16,29 +13,26 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/MDLinux/',
 
-  // GitHub pages deployment config.
+  // GitHub pages deployment config
   organizationName: 'madx900',
   projectName: 'MDLinux',
+  trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Internationalization
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ar'],
     localeConfigs: {
       en: {
-        label: 'English',
+        htmlLang: 'en',
         direction: 'ltr',
-        htmlLang: 'en-US',
       },
       ar: {
-        label: 'العربية',
-        direction: 'rtl',
         htmlLang: 'ar',
+        direction: 'rtl',
       },
     },
   },
@@ -49,12 +43,12 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
+          sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/madx900/MDLinux/tree/main/',
         },
-        blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
@@ -64,7 +58,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/social-card.jpg',
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'MDLinux',
         logo: {
@@ -97,7 +91,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/intro',
+                to: '/en/basics/introduction',
               },
             ],
           },
@@ -107,10 +101,6 @@ const config = {
               {
                 label: 'GitHub Discussions',
                 href: 'https://github.com/madx900/MDLinux/discussions',
-              },
-              {
-                label: 'Issues',
-                href: 'https://github.com/madx900/MDLinux/issues',
               },
             ],
           },
@@ -124,11 +114,135 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MDLinux. Built with Docusaurus.`,
+        copyright: `Copyright ${new Date().getFullYear()} MDLinux. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: {
+          plain: {
+            color: "#393A34",
+            backgroundColor: "#f6f8fa"
+          },
+          styles: [
+            {
+              types: ["comment", "prolog", "doctype", "cdata"],
+              style: {
+                color: "#999988",
+                fontStyle: "italic"
+              }
+            },
+            {
+              types: ["namespace"],
+              style: {
+                opacity: 0.7
+              }
+            },
+            {
+              types: ["string", "attr-value"],
+              style: {
+                color: "#e3116c"
+              }
+            },
+            {
+              types: ["punctuation", "operator"],
+              style: {
+                color: "#393A34"
+              }
+            },
+            {
+              types: ["entity", "url", "symbol", "number", "boolean", "variable", "constant", "property", "regex", "inserted"],
+              style: {
+                color: "#36acaa"
+              }
+            },
+            {
+              types: ["atrule", "keyword", "attr-name", "selector"],
+              style: {
+                color: "#00a4db"
+              }
+            },
+            {
+              types: ["function", "deleted", "tag"],
+              style: {
+                color: "#d73a49"
+              }
+            },
+            {
+              types: ["function-variable"],
+              style: {
+                color: "#6f42c1"
+              }
+            },
+            {
+              types: ["tag", "selector", "keyword"],
+              style: {
+                color: "#00009f"
+              }
+            }
+          ]
+        },
+        darkTheme: {
+          plain: {
+            color: "#F8F8F2",
+            backgroundColor: "#282A36"
+          },
+          styles: [
+            {
+              types: ["prolog", "constant", "builtin"],
+              style: {
+                color: "rgb(189, 147, 249)"
+              }
+            },
+            {
+              types: ["inserted", "function"],
+              style: {
+                color: "rgb(80, 250, 123)"
+              }
+            },
+            {
+              types: ["deleted"],
+              style: {
+                color: "rgb(255, 85, 85)"
+              }
+            },
+            {
+              types: ["changed"],
+              style: {
+                color: "rgb(255, 184, 108)"
+              }
+            },
+            {
+              types: ["punctuation", "symbol"],
+              style: {
+                color: "rgb(248, 248, 242)"
+              }
+            },
+            {
+              types: ["string", "char", "tag", "selector"],
+              style: {
+                color: "rgb(255, 121, 198)"
+              }
+            },
+            {
+              types: ["keyword", "variable"],
+              style: {
+                color: "rgb(189, 147, 249)",
+                fontStyle: "italic"
+              }
+            },
+            {
+              types: ["comment"],
+              style: {
+                color: "rgb(98, 114, 164)"
+              }
+            },
+            {
+              types: ["attr-name"],
+              style: {
+                color: "rgb(241, 250, 140)"
+              }
+            }
+          ]
+        },
       },
     }),
 };

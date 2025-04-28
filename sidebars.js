@@ -27,6 +27,26 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'System Administration',
+      items: [
+        '/en/admin/01-system-monitoring',
+        '/en/admin/02-performance-tuning',
+        '/en/admin/03-log-management',
+        '/en/admin/04-backup-strategies',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Security',
+      items: [
+        '/en/security/01-basic-security',
+        '/en/security/02-advanced-security',
+        '/en/security/03-security-auditing',
+        '/en/security/04-incident-response',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Shell Scripting',
       items: [
         '/en/scripting/01-bash-basics',
@@ -60,6 +80,26 @@ const sidebars = {
         '/ar/commands/06-package',
         '/ar/commands/07-security',
         '/ar/commands/08-performance',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'إدارة النظام',
+      items: [
+        '/ar/admin/01-system-monitoring',
+        '/ar/admin/02-performance-tuning',
+        '/ar/admin/03-log-management',
+        '/ar/admin/04-backup-strategies',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'الأمان',
+      items: [
+        '/ar/security/01-basic-security',
+        '/ar/security/02-advanced-security',
+        '/ar/security/03-security-auditing',
+        '/ar/security/04-incident-response',
       ],
     },
     {

@@ -37,6 +37,26 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Networking',
+      items: [
+        '/en/networking/01-basic-networking',
+        '/en/networking/02-advanced-networking',
+        '/en/networking/03-network-security',
+        '/en/networking/04-network-troubleshooting',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Storage',
+      items: [
+        '/en/storage/01-storage-basics',
+        '/en/storage/02-advanced-storage',
+        '/en/storage/03-storage-performance',
+        '/en/storage/04-storage-security',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Security',
       items: [
         '/en/security/01-basic-security',
@@ -90,6 +110,26 @@ const sidebars = {
         '/ar/admin/02-performance-tuning',
         '/ar/admin/03-log-management',
         '/ar/admin/04-backup-strategies',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'الشبكات',
+      items: [
+        '/ar/networking/01-basic-networking',
+        '/ar/networking/02-advanced-networking',
+        '/ar/networking/03-network-security',
+        '/ar/networking/04-network-troubleshooting',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'التخزين',
+      items: [
+        '/ar/storage/01-storage-basics',
+        '/ar/storage/02-advanced-storage',
+        '/ar/storage/03-storage-performance',
+        '/ar/storage/04-storage-security',
       ],
     },
     {

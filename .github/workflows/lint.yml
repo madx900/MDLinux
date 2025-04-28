@@ -1,0 +1,33 @@
+name: Lint
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm install -D eslint prettier @docusaurus/eslint-plugin markdownlint-cli
+
+      - name: Run ESLint
+        run: npx eslint . --ext .js,.jsx,.ts,.tsx
+
+      - name: Run Prettier
+        run: npx prettier --check "**/*.{js,jsx,ts,tsx,md,mdx}"
+
+      - name: Check Markdown files
+        run: npx markdownlint "docs/**/*.md"

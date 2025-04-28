@@ -12,6 +12,7 @@ const sidebars = {
         '/en/basics/05-using-documentation',
         '/en/basics/06-interactive-tutorials',
         '/en/basics/07-advanced-challenges',
+        '/en/basics/08-scenarios-and-quizzes',
       ],
     },
     {
@@ -92,6 +93,7 @@ const sidebars = {
         '/ar/basics/05-using-documentation',
         '/ar/basics/06-interactive-tutorials',
         '/ar/basics/07-advanced-challenges',
+        '/ar/basics/08-scenarios-and-quizzes',
       ],
     },
     {

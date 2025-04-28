@@ -1,0 +1,36 @@
+{
+  "name": "mdlinux",
+  "version": "1.0.0",
+  "description": "Comprehensive Linux documentation in English and Arabic",
+  "scripts": {
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madx900/MDLinux.git"
+  },
+  "keywords": [
+    "linux",
+    "documentation",
+    "tutorials",
+    "arabic",
+    "english",
+    "bilingual"
+  ],
+  "author": "MDLinux Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/madx900/MDLinux/issues"
+  },
+  "homepage": "https://github.com/madx900/MDLinux#readme",
+  "dependencies": {
+    "@docusaurus/core": "^2.4.1",
+    "@docusaurus/preset-classic": "^2.4.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

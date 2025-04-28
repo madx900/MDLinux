@@ -1,0 +1,14 @@
+# Default owners for everything in the repo
+* @madx900
+
+# Documentation owners
+/docs/en/ @madx900
+/docs/ar/ @madx900
+
+# GitHub specific files
+/.github/ @madx900
+*.md @madx900
+*.yml @madx900
+
+# Website configuration
+/website/ @madx900

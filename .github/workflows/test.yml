@@ -1,0 +1,34 @@
+name: Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Check build
+        run: npm run build
+
+      - name: Test links
+        run: |
+          npm run build
+          npm run serve & sleep 5
+          npx broken-link-checker http://localhost:3000 --recursive --ordered
